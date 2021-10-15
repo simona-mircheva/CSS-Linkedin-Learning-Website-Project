@@ -1,0 +1,166 @@
+/* CSS HEX */
+/* --pale-silver: #d7cdccff; */
+/* --dark-purple: #260f26ff; */
+/* --black-coral: #59656fff; */
+/* --english-red: #af3e4dff; */
+/* --ocean-green: #5fbb97ff; */
+/* --xiketic: #130101ff; */
+
+/*Global styles
+-------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #130101ff;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #af3e4dff;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1;
+}
+h2 {
+  font-size: 45px;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+.divider > section {
+  border-bottom: 1px dashed #59656fff;
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+/*Profile
+-------------------------------------*/
+header {
+  background: #59656fff;
+  color: #d2c7c6;
+}
+
+/*Projcts
+-------------------------------------*/
+.projects {
+  background: #d7cdccff;
+}
+.projects a {
+  color: #59656fff;
+}
+.projects .btn {
+  color: #d7cdccff;
+  background: #59656fff;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: rgba(89, 101, 111, 0.8);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+/*Work Experience
+-------------------------------------*/
+.work-experience {
+  background: #59656fff;
+  color: #d2c7c6;
+}
+/*Education
+-------------------------------------*/
+.education {
+  background-image: url(../images/Education-Section.png);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+.education p {
+  width: 60%;
+}
+/*Contact
+-------------------------------------*/
+footer {
+  background: #260f26ff;
+  color: #d7cdccff;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+/*Responsive
+-------------------------------------*/
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
